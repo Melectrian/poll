@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/normalize.css' />
+    <link rel='stylesheet' href='/stylesheets/animate.css' />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,300italic,400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.min.js"></script>
+	<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+	<script type="text/javascript" src="/javascripts/script.js"></script>
+
+  </head>
+  <body>
+
+	<!-- Find a better video source. This one is shit.-->
+	<video class="bg-video" autoplay loop muted>
+	  <source src="/images/background_vid.mp4" type="video/mp4">
+	</video>
+
+	<div class="black-glass"></div>
+
+	<div id="fullpage">
+		<div class="section">
+			<div class="slide">
+				
+				<article class="intro">
+					<div class="intro__container">
+						<h1 class="intro__header animated slideInDown">One question to rule them all</h1>
+						<img class="intro__logo animated wobble hvr-pulse" src="images/question.png">
+						<p class="intro--smalltext animated slideInUp">Do you have...</p>
+						<p class="intro--bigtext animated slideInUp">The answer?</p>
+						<p class="intro--tinytext animated slideInUp">Click on the big question mark</p>
+					</div>
+				</article>
+
+			</div>
+			<div class="slide">
+				
+				<article class="poll">
+					<div class="poll__container">
+						<h2 class="poll__question">{{question}}</h2>
+						<ul class="poll__answerbox">
+							{{#bundle}}
+								<li class="poll__answer hvr-sweep-to-right">{{answer}}</li>
+							{{/bundle}}
+						</ul>
+						<p class='poll__alternate'>None of the given answers feels good enough? You have a better alternative? Write it down in the field below:</p>
+						<textarea class="poll__alternatetext"></textarea>
+						<button class="poll__vote btn hvr-pulse">Vote</button>
+						<button class="poll__result btn hvr-pulse">Results</button>
+						<div class="clearfix"></div>
+					</div>
+				</article>
+
+			</div>
+			<div class="slide">
+				<article class="result">
+					<h1 class="result__title">Poll statistics</h1>
+					<div class="ct-chart"></div>
+					<p class="result__smalltext">Click the chart to refresh.</p>
+				</article>
+				<article class="other">
+					<h1 class="other__title">Check out some of the other answers people gave to the ultimate question.</h1>
+					<p class="other__smalltext">Hit the generate button to display five random answers.</p>
+					<ul class="other__answerlist"></ul>
+					<button class="other__generator btn hvr-pulse">Generate answers</button>
+					<span class="other__retry-text">Vote again</span><img class="other__retry hvr-pulse" src="/images/retry.png">
+				</article>
+			</div>
+		</div>
+	</div>
+  </body>
+
+  <script type="text/javascript">
+
+  </script>
+
+  <script type="text/javascript">
+
+	$(document).ready(function() {
+
+
+
+	});
+
+  </script>
+
+</html>
